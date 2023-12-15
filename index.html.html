@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="C:\Users\Arun Kanwal\Pictures\fdd.jpg" class="logo"></img>
+                <ul>
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section3">Projects</a></li>
+                    <li><a href="#section4">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Arun</span><br>Kanwal from Uttarakhand,India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="section2">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:/Users/Arun Kanwal/Pictures/My_Photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hardworking, highly motivated professional eager to lend combined knowledge and skills to enhance business performance. Operates well in both individual and team capacities, leveraging seasoned work ethic to quickly adapt to different processes and drive company objectives. Resourceful and results-driven with a passion for growth and efficiency to meet company needs and increase service value.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++</span><br>Advance skills in C++ Language</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>SQL</span><br>CRUD operations using SQL </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+
+                            <li><span>2021-2024 , BCA</span><br>Graphic Era Hill University</li>
+                            <li><span>2020-21 , Intermediate</span><br>Holy Angel Public School</li>
+                            <li><span>2018-19 , Highschool</span><br>Holy Angel Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="section3">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Sudoku Solver</h2>
+                    <p> Sudoku solver is a program or algorithm designed to solve Sudoku puzzles automatically. Sudoku is a popular logic-based puzzle game played on a 9x9 grid, divided into nine 3x3 subgrids. The goal is to fill in the grid so that each row, each column, and each 3x3 subgrid contains all the numbers from 1 to 9 without repetition.</p>
+                    <a href="https://github.com/Arunkanwal/sudoku_solver">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Bank Manaagement System</h2>
+                    <p>A Bank Management System (BMS) refers to a software application or system that helps in managing various banking operations and functionalities within a financial institution or bank. It is designed to streamline and automate different aspects of banking operations, providing efficient management of day-to-day tasks, customer interactions, transactions, and administrative functions..</p>
+                    <a href="https://github.com/Arunkanwal/Bank_management_system">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Unknown</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
+                        officia, alias vitae fugiat fuga exercitationem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ----------CONTACT---------- -->
+    <div id="section4">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+
+<p><i class="fas fa-paper-plane"></i> arunkanwal12@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 7455980238</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/arun.kanwal?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arun-kanwal-b7b19124a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/14WXRL98YMg82646UHdMz0GMM_hy2F7V4/view?usp=drive_link" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Arun Kanwal. Made with <i class="fas fa-heart"></i> by Arun Kanwal</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+</body>
+
+</html>
